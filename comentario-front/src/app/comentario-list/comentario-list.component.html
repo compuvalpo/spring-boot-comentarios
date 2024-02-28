@@ -1,13 +1,13 @@
-<h1>Comentarios</h1>
+<h1 class="mb-4">Comentarios</h1>
 
-<table>
-  <thead>
+<table class="table table-primary table-hover table-striped table-responsive table-sm table-bordered text-center">
+  <thead class="table-light">
     <tr>
       <th>#</th>
       <th>EMAIL</th>
       <th>REGION</th>
       <th>COMENTARIO</th>
-      <th>FECHA CREACION</th>
+      <th class="d-none d-sm-block">FECHA CREACION</th>
       <th>ACCION</th>
     </tr>
   </thead>
@@ -19,7 +19,7 @@
       <td>{{ comentario.email }}</td>
       <td>{{ comentario.fk_region }}</td>
       <td>{{ comentario.comentario }}</td>
-      <td>{{ comentario.fecha | date:'dd/MM/yyyy HH:MM' }}</td>
+      <td class="d-none d-sm-block">{{ comentario.fecha | date:'dd/MM/yyyy HH:MM' }}</td>
       <td></td>
     </tr>
 
