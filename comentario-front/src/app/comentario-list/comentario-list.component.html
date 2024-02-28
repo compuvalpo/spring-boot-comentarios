@@ -1,0 +1,28 @@
+<h1>Comentarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>EMAIL</th>
+      <th>REGION</th>
+      <th>COMENTARIO</th>
+      <th>FECHA CREACION</th>
+      <th>ACCION</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  @for(comentario of comentarios; track comentario.id){
+    <tr>
+      <td>{{ comentario.id }}</td>
+      <td>{{ comentario.email }}</td>
+      <td>{{ comentario.fk_region }}</td>
+      <td>{{ comentario.comentario }}</td>
+      <td>{{ comentario.fecha | date:'dd/MM/yyyy HH:MM' }}</td>
+      <td></td>
+    </tr>
+
+  }
+  </tbody>
+</table>
