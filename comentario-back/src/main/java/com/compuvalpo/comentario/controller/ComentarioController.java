@@ -13,6 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/comentario")
 @AllArgsConstructor
+@CrossOrigin
 public class ComentarioController {
 
     private final ComentarioService comentarioService;
