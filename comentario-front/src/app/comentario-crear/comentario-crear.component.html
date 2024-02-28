@@ -1,0 +1,41 @@
+<h1 class="mb-4">Nuevo Comentario</h1>
+
+<div class="col-sm-10 col-md-8 col-lg-6">
+  <form [formGroup]="form" (ngSubmit)="create()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" formControlName="email" class="form-control" id="email" placeholder="Ingrese Email">
+    </div>
+    <div class="mb-3">
+      <label for="fk_region" class="form-label">Región</label>
+      <select  formControlName="fk_region" class="form-select" id="fk_region">
+        <option selected>Seleccione</option>
+        <option value="15">REGION DE ARICA Y PARINACOTA</option>
+        <option value="1">REGION DE TARAPACA</option>
+        <option value="2">REGION DE ANTOFAGASTA</option>
+        <option value="3">REGION DE ATACAMA</option>
+        <option value="4">REGION DE COQUIMBO</option>
+        <option value="5">REGION DE VALPARAISO</option>
+        <option value="13">REGION DE METROPOLITANA</option>
+        <option value="6">REGION DEL LIBERTADOR B. OHIGGINS</option>
+        <option value="7">REGION DEL MAULE</option>
+        <option value="16">REGION DE ÑUBLE</option>
+        <option value="8">REGION DEL BIOBIO</option>
+        <option value="9">REGION DE LA ARAUCANIA</option>
+        <option value="14">REGION DE LOS RIOS</option>
+        <option value="10">REGION DE LOS LAGOS</option>
+        <option value="11">REGION DE AYSEN</option>
+        <option value="12">REGION DE MAGALLANES</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="comentario" class="form-label">Comentario</label>
+      <textarea  formControlName="comentario" class="form-control" id="comentario" rows="4" placeholder="Ingrese Comentario"></textarea>
+    </div>
+
+    <div class="mb-3 text-end">
+      <button type="submit" class="btn btn-success ms-2">Guardar</button>
+      <button type="buttom" class="btn btn-danger ms-2" routerLink="/">Cancelar</button>
+    </div>
+  </form>
+</div>
