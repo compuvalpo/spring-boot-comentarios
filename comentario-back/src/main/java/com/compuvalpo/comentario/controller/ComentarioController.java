@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/comentario")
 @AllArgsConstructor
-@CrossOrigin
+@CrossOrigin //(origins = "http://localhost:9002")
 public class ComentarioController {
 
     private final ComentarioService comentarioService;
