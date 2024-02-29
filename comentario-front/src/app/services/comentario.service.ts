@@ -26,7 +26,7 @@ export class ComentarioService {
  }
 
  delete(id: number){
-  return this.http.delete<void>(`http://localhost:9001//api/comentario/${id}`);
+  return this.http.delete<void>(`http://localhost:9001/api/comentario/${id}`);
  }
 
 }
