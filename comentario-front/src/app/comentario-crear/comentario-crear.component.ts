@@ -31,7 +31,6 @@ export default class ComentarioCrearComponent {
   }
 
   finalizarCreate(){
-    this.router.navigate(['/']);
 
     swal.fire({
       title: 'Comentario Registrado',
@@ -40,6 +39,10 @@ export default class ComentarioCrearComponent {
       confirmButtonText: 'OK',
       timer: 2500,
       timerProgressBar: true
-    })
+    }).then((result) => {
+
+      this.router.navigate(['/']);
+
+    });
   }
 }
