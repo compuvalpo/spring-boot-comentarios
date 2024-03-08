@@ -11,6 +11,7 @@ Dependencias
 - [ ] Spring Web
 - [ ] Spring Data JPA
 - [ ] H2 Database (in-memory)
+- [ ] Thymeleaf
 - [ ] Lombok
 - [ ] JUnit
 - [ ] Mockito 5.10
