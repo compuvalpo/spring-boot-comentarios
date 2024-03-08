@@ -28,11 +28,11 @@ public class ComentarioController {
     }
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public Comentario create(@RequestBody Comentario comentario){
+    public Comentario create(@Validated @RequestBody Comentario comentario){
         return comentarioService.create(comentario);
     }
     @PutMapping("{id}")
-    public Comentario update(@PathVariable Integer id, @RequestBody Comentario comentario){
+    public Comentario update(@PathVariable Integer id,@Validated @RequestBody Comentario comentario){
         return comentarioService.update(id, comentario);
     }
 

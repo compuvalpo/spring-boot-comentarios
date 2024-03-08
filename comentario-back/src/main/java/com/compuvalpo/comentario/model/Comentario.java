@@ -14,9 +14,19 @@ public class Comentario {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
+	
+    @NotNull(message = "Debe agregar el email.")
+    @NotBlank(message = "El campo email no puede estar vacio.")
     private String email;
+	
+    @NotNull(message = "Debe agregar el region.")
+    @NotBlank(message = "El campo region no puede estar vacio.")
     private Integer fk_region;
+	
+    @NotNull(message = "Debe agregar el comentario.")
+    @NotBlank(message = "El campo comentario no puede estar vacio.")
     private String comentario;
+	
     private LocalDateTime fecha;
 
     public Comentario() {
