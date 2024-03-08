@@ -17,6 +17,26 @@ export default class ComentarioListComponent implements OnInit {
   private comentarioService = inject(ComentarioService);
   comentarios: Comentario[] = [];
 
+  regiones = [
+    {id:0, name: ""},
+    {id:1, name: "TARAPACA"},
+    {id:2, name: "ANTOFAGASTA"},
+    {id:3, name: "ATACAMA"},
+    {id:4, name: "COQUIMBO"},
+    {id:5, name: "VALPARAISO"},
+    {id:6, name: "LIBERTADOR B. OHIGGINS"},
+    {id:7, name: "MAULE"},
+    {id:8, name: "BIOBIO"},
+    {id:9, name: "ARAUCANIA"},
+    {id:10, name: "LOS LAGOS"},
+    {id:11, name: "AYSEN"},
+    {id:12, name: "MAGALLANES"},
+    {id:13, name: "METROPOLITANA"},
+    {id:14, name: "LOS RIOS"},
+    {id:15, name: "ATACAMA"},
+    {id:16, name: "ÑUBLE"}
+  ]
+
   recargar() {
     this.comentarioService.list().subscribe((comentarios) => {
       this.comentarios = comentarios;

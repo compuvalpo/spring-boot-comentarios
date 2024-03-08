@@ -19,11 +19,13 @@
   </thead>
 
   <tbody>
+
     @for(comentario of comentarios; track comentario.id){
     <tr>
       <td>{{ comentario.id }}</td>
       <td>{{ comentario.email }}</td>
-      <td>{{ comentario.fk_region }}</td>
+      <td>{{ regiones[comentario.fk_region].name }}
+      </td>
       <td>{{ comentario.comentario }}</td>
       <td class="d-none d-md-block">{{ comentario.fecha | date:'dd/MM/yyyy HH:MM' }}</td>
       <td>
