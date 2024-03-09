@@ -1,6 +1,8 @@
 package com.compuvalpo.comentario.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -19,7 +21,7 @@ public class Comentario {
     @NotBlank(message = "El campo email no puede estar vacio.")
     private String email;
 	
-    @NotNull(message = "Debe agregar el region.")
+    @NotNull(message = "Debe agregar la region.")
     @NotBlank(message = "El campo region no puede estar vacio.")
     private Integer fk_region;
 	
