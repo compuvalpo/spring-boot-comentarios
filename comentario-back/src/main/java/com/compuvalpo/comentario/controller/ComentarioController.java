@@ -3,8 +3,8 @@ package com.compuvalpo.comentario.controller;
 import com.compuvalpo.comentario.model.Comentario;
 import com.compuvalpo.comentario.service.ComentarioService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
