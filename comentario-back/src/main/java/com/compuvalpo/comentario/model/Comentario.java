@@ -22,7 +22,6 @@ public class Comentario {
     private String email;
 	
     @NotNull(message = "Debe agregar la region.")
-    @NotBlank(message = "El campo region no puede estar vacio.")
     private Integer fk_region;
 	
     @NotNull(message = "Debe agregar el comentario.")

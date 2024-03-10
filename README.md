@@ -15,6 +15,7 @@ Dependencias
 - [ ] Lombok
 - [ ] JUnit
 - [ ] Mockito 5.10
+- [ ] springdoc 2.3 [https://springdoc.org/#Introduction] [http://localhost:9001/doc/swagger-ui/index.html]
 
 ## Angular
 Carpeta comentario-front [http://localhost:9002/]
