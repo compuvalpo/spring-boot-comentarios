@@ -1,5 +1,5 @@
 # Comentarios
-Sistema para crear Comentarios utilizando como Bakcend Java Spring Boot y en Frontend Angular.
+Sistema para crear Comentarios utilizando Java Spring Boot en Backend  y Angular en Frontend.
 
 ## Java Spring Boot
 Carpeta comentario-back [http://localhost:9001/]
@@ -11,7 +11,6 @@ Dependencias
 - [ ] Spring Web
 - [ ] Spring Data JPA
 - [ ] H2 Database (in-memory)
-- [ ] Thymeleaf
 - [ ] Lombok
 - [ ] JUnit
 - [ ] Mockito 5.10
