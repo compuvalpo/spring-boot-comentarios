@@ -35,3 +35,8 @@ mkdir comentarios
 cd comentarios
 git clone https://gitlab.com/compuvalpo/comentarios.git
 ```
+
+## Capturas
+![](capturas/BackEnd.png)
+![](capturas/FrontEnd.png)
+![](capturas/Swagger.png)
