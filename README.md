@@ -7,7 +7,7 @@ El Backend está desarrollado en Java 17 con Spring Boot 3.2.3
 
 - [ ] Java JDK 17 [https://www.oracle.com/cl/java/technologies/downloads/#java17]
 
-Dependencias
+## Dependencias
 - [ ] Spring Web
 - [ ] Spring Data JPA
 - [ ] H2 Database (in-memory)
@@ -30,8 +30,6 @@ Requisitos
 
 ## Clonar Repositorio
 ```
-mkdir comentarios
-cd comentarios
 git clone https://gitlab.com/compuvalpo/comentarios.git
 ```
 
